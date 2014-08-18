@@ -8,8 +8,8 @@
 </head>
 <body>
 	<%= render 'layouts/header' %>
-	<% if flash[:success].present? %>
-		<p class="center success"><%= flash[:success] %></p>
+	<% flash.each do |k, v| %>
+		<div class="alert alert-<%= k %>"><%= v %></div>
 	<% end %>
 
 	<%= yield %>

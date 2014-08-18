@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	before_save { email.downcase! }
 
 	EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
 

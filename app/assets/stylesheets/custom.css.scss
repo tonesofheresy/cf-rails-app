@@ -14,14 +14,6 @@ body {
 	text-align: center;
 }
 
-/* Flash messages */
-
-.success {
-	color: #084608;
-	background: #78EBB4;
-	padding: 10px;
-}
-
 /* Header styles */
 
 #name {
@@ -81,7 +73,17 @@ input {
 }
 
 /* Miscellaneous */
+
 span.header {
 	font-weight: bold;
 	font-size: 18px;
+}
+
+.row p {
+	margin-left: 10%;
+	margin-top: 20px;
+}
+
+.navbar-nav > li, .navbar-nav {
+float: right !important;
 }
