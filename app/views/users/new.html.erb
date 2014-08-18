@@ -1,0 +1,31 @@
+<h1>Create a new user</h1>
+<%= form_for @user do |f| %>
+ 
+  <p>
+    <%= f.label :first, "First Name (required)" %>
+    <%= f.text_field :first %>
+  </p>
+
+  <p>
+    <%= f.label :last, "Last Name" %>
+    <%= f.text_field :last %>
+  </p>	
+ 
+ 	<p>
+    <%= f.label :email, "Email (required)" %>
+    <%= f.text_field :email %>
+  </p>
+
+  <% if @user.errors.any? %>
+  	<% @user.errors.full_messages.each do |msg| %>
+	  	<p class='error-messages'>
+	  		<%= msg %>
+	  	</p>
+	  <% end %>
+  <% end %>
+ 
+  <p class='buttons'>
+    <%= f.submit "Create user" %>
+  </p>
+ 
+<% end %>
