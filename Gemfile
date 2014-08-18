@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
@@ -35,7 +35,7 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# gem 'capistrano-rails', group: :develheroopment
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -48,4 +48,4 @@ group :production do
 	gem 'rails_12factor', '0.0.2'
 end
 
-gem 'bcrypt-ruby'
+gem 'bcrypt'
