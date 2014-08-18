@@ -1,11 +1,11 @@
 <section class="row">
   <div class="col-md-6 col-sm-6 col-sm-offset-3 col-md-offset-3">
-    <h1 class="center">Create a new user</h1>
+    <h1 class="center">Edit user</h1>
     <%= form_for @user do |f| %>
      
       <%= render 'layouts/form', f: f %>
      
-      <%= f.submit "Create user", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Update user", class: "btn btn-large btn-primary" %>
      
     <% end %>
   </div>

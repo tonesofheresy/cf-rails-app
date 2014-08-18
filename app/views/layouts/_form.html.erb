@@ -1,0 +1,16 @@
+<%= f.label :first, "First Name (required)" %>
+<%= f.text_field :first %>
+
+<%= f.label :last, "Last Name" %>
+<%= f.text_field :last %>
+
+<%= f.label :email, "Email (required)" %>
+<%= f.text_field :email %>
+
+<% if @user.errors.any? %>
+	<% @user.errors.full_messages.each do |msg| %>
+  	<p class='error-messages'>
+  		<%= msg %>
+  	</p>
+  <% end %>
+<% end %>
